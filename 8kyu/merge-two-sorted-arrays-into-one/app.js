@@ -12,6 +12,12 @@ function mergeArrays(arr1, arr2) {
 
 console.log(mergeArrays([4, 7, 33, 94, 0, 5], [9, 22, 54, 1, 4, 15]));
 
+//Alternate solution
+function mergArr(x, y){
+   return [...new Set(x.concat(y))].sort((x, y) => x - y);
+}
+
+console.log(mergArr([4, 7, 33, 94, 0, 5], [9, 22, 54, 1, 4, 15]));
 
 // const arr1 = [4, 7, 33, 94, 0, 5];
 // const arr2 = [9, 22, 54, 1, 4, 15];
