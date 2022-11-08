@@ -4,7 +4,7 @@
 // The function takes a name as its only argument, and returns one of the following strings:
 
 function areYouPlayingBanjo(name) {
-   if (name.charAt(0) === 'R' || 'r') {
+   if (name.charAt(0) === 'R' || name.charAt(0) === 'r') {
     return `${name} plays banjo`;
    } else {
     return `${name} does not play banjo`
@@ -13,3 +13,5 @@ function areYouPlayingBanjo(name) {
 }
 
 console.log(areYouPlayingBanjo('Robert'));
+console.log(areYouPlayingBanjo('robert'));
+console.log(areYouPlayingBanjo('tina'));
